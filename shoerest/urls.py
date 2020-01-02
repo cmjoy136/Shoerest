@@ -16,6 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import url, include
+from shoerest.quickstart.models import *
+
+admin.site.register(Manufacturer)
+admin.site.register(ShoeType)
+admin.site.register(ShoeColor)
+admin.site.register(Shoe)
 
 from rest_framework import routers
 

@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponseRedirect
 from rest_framework import viewsets
 from shoerest.quickstart.serializers import *
 from shoerest.quickstart.models import *
@@ -18,3 +18,4 @@ class ShoeColorView(viewsets.ModelViewSet):
 class ShoeView(viewsets.ModelViewSet):
     queryset = Shoe.objects.all()
     serializer_class = ShoeSerializer 
+
